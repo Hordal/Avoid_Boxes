@@ -1,0 +1,77 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    position: relative;
+    border: 3px solid #888;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+canvas {
+    display: block;
+    background-color: #000;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    text-shadow: 0 0 10px #fff;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #4CAF50, #2E8B57);
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 5px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+#score-display {
+    margin: 20px 0;
+    width: 80%;
+    text-align: left;
+}
+
+#score-display div {
+    padding: 8px;
+    border-bottom: 1px solid #555;
+}
+
+#score-display div.winner {
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}
